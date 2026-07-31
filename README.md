@@ -276,4 +276,4 @@ GitHub:
 https://github.com/azahratawp-ctrl
 
 LinkedIn:
-(Add your LinkedIn URL)
+https://www.linkedin.com/in/tiaraazahrawikap
