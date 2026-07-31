@@ -1,58 +1,35 @@
-# 👥 HR Analytics Dashboard
+# 👨‍💼 HR Analytics Dashboard
 
-> End-to-End HR Analytics Project using Python
-
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-darkblue)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-lightgrey)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
-![EDA](https://img.shields.io/badge/EDA-Exploratory%20Data%20Analysis-green)
-![Dashboard](https://img.shields.io/badge/Dashboard-HR%20Analytics-red)
+![Dashboard](images/HR_Analytics_Dashboard.png)
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
-Employee attrition is one of the biggest challenges for organizations because replacing employees is costly and time-consuming.
+Employee attrition is one of the biggest challenges faced by Human Resource departments. High turnover increases recruitment costs, reduces productivity, and affects organizational performance.
 
-This project analyzes the IBM HR Analytics dataset to identify factors related to employee turnover and provide actionable business recommendations through Exploratory Data Analysis (EDA) and an Executive Dashboard.
+This project performs an end-to-end HR Analytics workflow using Python, starting from data cleaning, exploratory data analysis (EDA), feature engineering, business insight generation, and executive dashboard development.
 
----
-
-# 🎯 Business Problem
-
-The HR department wants to answer several important questions:
-
-- Which employees are most likely to resign?
-- Does overtime increase attrition?
-- Which job roles have the highest turnover?
-- Does salary affect employee retention?
-- Which age groups require more HR attention?
-
----
-
-# 🎯 Project Objectives
-
-- Perform data cleaning and feature engineering
-- Explore employee demographics
-- Analyze employee attrition
-- Identify important HR trends
-- Build an Executive HR Dashboard
-- Generate business insights and recommendations
+The objective is to identify employee characteristics associated with attrition and provide actionable recommendations for HR decision makers.
 
 ---
 
 # 📂 Dataset
 
-**Dataset : IBM HR Analytics Employee Attrition**
+**Dataset:** IBM HR Analytics Employee Attrition & Performance
 
-- Employees : **1,470**
-- Features : **35**
-- Target Variable : **Attrition**
+- 1,470 Employees
+- 34 Variables
+- No Missing Values
+- No Duplicate Records
+
+Target Variable
+
+- Attrition (Yes / No)
 
 ---
 
-# 🛠 Tools & Technologies
+# 🛠 Tech Stack
 
 - Python
 - Pandas
@@ -63,167 +40,231 @@ The HR department wants to answer several important questions:
 
 ---
 
-# 🔄 Project Workflow
+# 📊 Executive Dashboard
 
-```
-Data Collection
-        ↓
-Data Cleaning
-        ↓
-Feature Engineering
-        ↓
-Exploratory Data Analysis
-        ↓
-Business Insights
-        ↓
-Executive Dashboard
-```
+![Dashboard](images/HR_Analytics_Dashboard.png)
 
 ---
 
-# 🧹 Data Cleaning
+# 📈 Key Performance Indicators (KPI)
 
-The following preprocessing steps were performed:
-
-- No missing values
-- No duplicate records
-- Removed non-informative columns
-  - EmployeeCount
-  - EmployeeNumber
-  - StandardHours
-  - Over18
-- Created Age Group
-- Created Income Level
-- Created Tenure Group
-
----
-
-# ⚙ Feature Engineering
-
-New business-oriented features:
-
-| Feature | Description |
-|----------|-------------|
-| AgeGroup | Employee age categories |
-| IncomeLevel | Low / Medium / High income |
-| TenureGroup | Years at company categories |
+| Metric | Value |
+|---------|--------|
+| Employees | **1,470** |
+| Attrition Employees | **237** |
+| Attrition Rate | **16.12%** |
+| Retention Rate | **83.88%** |
 
 ---
 
 # 📊 Exploratory Data Analysis
 
-The analysis includes:
+## Employee Attrition Distribution
 
-- Employee Age Distribution
-- Monthly Income Distribution
-- Attrition Distribution
-- Attrition by Department
-- Attrition by Job Role
-- Attrition by Age Group
-- Attrition by Income Level
-- Attrition by Overtime
-- Correlation Analysis
+![Attrition](images/Employee_Attrition_Distribution.png)
+
+Most employees remain in the company. However, around **16%** have left the organization.
 
 ---
 
-# 📈 Executive Dashboard
+## Attrition by Department
 
-> Executive HR Dashboard
+![Department](images/Attrition_by_Department.png)
 
-<p align="center">
-
-<img src="dashboard.png" width="95%">
-
-</p>
+Sales and Human Resources show relatively higher attrition compared to Research & Development.
 
 ---
 
-# 💡 Business Insights
+## Attrition by Gender
 
-### 1. Overtime employees have significantly higher attrition rates.
+![Gender](images/Attrition_by_Gender.png)
 
-Employees who frequently work overtime are much more likely to leave the company.
-
----
-
-### 2. Certain Job Roles experience the highest employee turnover.
-
-HR should prioritize retention strategies for these positions.
+Attrition is relatively balanced between male and female employees, indicating gender is not the primary factor.
 
 ---
 
-### 3. Younger employees show higher attrition.
+## Attrition by Overtime
 
-Employees in younger age groups tend to leave more frequently than senior employees.
+![Overtime](images/Attrition_by_Overtime.png)
 
----
-
-### 4. Lower-income employees are more likely to resign.
-
-Compensation appears to influence employee retention.
+Employees working overtime are significantly more likely to leave the company.
 
 ---
 
-### 5. Long-tenure employees demonstrate stronger loyalty.
+## Attrition by Job Role
 
-Employees with longer service periods generally have much lower attrition.
+![JobRole](images/Attrition_by_JobRole.png)
+
+Sales Representatives and Laboratory Technicians experience the highest attrition rates.
 
 ---
 
-# 📌 Business Recommendations
+## Attrition by Age Group
 
-Based on the analysis, HR should consider:
+![AgeGroup](images/Attrition_by_AgeGroup.png)
 
+Younger employees (18–30 years) show the highest turnover.
+
+---
+
+## Attrition by Income Level
+
+![Income](images/Attrition_by_IncomeLevel.png)
+
+Lower-income employees are considerably more likely to resign.
+
+---
+
+## Attrition by Years at Company
+
+![Tenure](images/Attrition_by_YearsatCompany.png)
+
+Most resignations occur during the first five years of employment.
+
+---
+
+## Monthly Income Distribution
+
+![Income Distribution](images/Monthly_Income_Distribution.png)
+
+Income distribution is highly right-skewed, with most employees earning lower monthly salaries.
+
+---
+
+## Employee Age Distribution
+
+![Age Distribution](images/Age_Distribution.png)
+
+The workforce is dominated by employees aged between 30 and 40 years.
+
+---
+
+## Correlation Heatmap
+
+![Correlation](images/Correlation_Heatmap.png)
+
+Most variables exhibit weak linear relationships, suggesting employee attrition is influenced by multiple interacting factors.
+
+---
+
+## Monthly Income Correlation
+
+![Correlation Income](images/Correlation_with_MonthlyIncome.png)
+
+Monthly income strongly correlates with Job Level, Total Working Years, and Years at Company.
+
+---
+
+# 💼 Business Insights
+
+### 1. Overtime is the strongest attrition indicator
+
+Employees working overtime leave at a much higher rate than those without overtime.
+
+**Recommendation**
+
+- Improve workload balancing
 - Reduce excessive overtime
-- Improve onboarding programs
-- Review compensation for lower-income employees
-- Create career development plans
-- Increase employee engagement initiatives
-- Strengthen retention strategies for high-risk job roles
+- Monitor employee burnout
 
 ---
 
-# 📁 Repository Structure
+### 2. Early-career employees leave more frequently
+
+Employees within their first five years show the highest turnover.
+
+**Recommendation**
+
+- Strengthen onboarding programs
+- Conduct stay interviews
+- Improve mentoring initiatives
+
+---
+
+### 3. Lower-income employees are more likely to resign
+
+Employees in the low-income group experience significantly higher attrition.
+
+**Recommendation**
+
+- Review salary competitiveness
+- Introduce performance incentives
+- Develop clearer career progression
+
+---
+
+### 4. Sales-related roles require attention
+
+Sales Representatives exhibit the highest attrition.
+
+**Recommendation**
+
+- Review sales targets
+- Improve commission structure
+- Enhance career development opportunities
+
+---
+
+### 5. Attrition is not primarily driven by gender
+
+Gender differences are relatively small compared to factors such as overtime, tenure, and income.
+
+---
+
+# 📋 Executive Summary
+
+This HR Analytics project identified several key factors associated with employee attrition.
+
+The analysis indicates that overtime, tenure, income level, and job role have a stronger relationship with employee turnover than demographic variables such as gender.
+
+The findings suggest HR managers should prioritize workload management, employee retention during early employment, competitive compensation, and targeted interventions for high-risk job roles.
+
+Implementing these recommendations can help reduce turnover and improve workforce stability.
+
+---
+
+# 📁 Project Structure
 
 ```
 HR-Analytics-Dashboard/
 │
 ├── data/
 │   ├── data_IBM.csv
+│   └── README.md
 │
-├── dashboard.png
+├── images/
+│   ├── HR_Analytics_Dashboard.png
+│   ├── Employee_Attrition_Distribution.png
+│   ├── Attrition_by_Department.png
+│   ├── Attrition_by_Gender.png
+│   ├── Attrition_by_Overtime.png
+│   ├── Attrition_by_JobRole.png
+│   ├── Attrition_by_AgeGroup.png
+│   ├── Attrition_by_IncomeLevel.png
+│   ├── Attrition_by_YearsatCompany.png
+│   ├── Monthly_Income_Distribution.png
+│   ├── Age_Distribution.png
+│   ├── Correlation_Heatmap.png
+│   └── Correlation_with_MonthlyIncome.png
 │
 ├── HR_Analytics.ipynb
-│
-└── README.md
+├── README.md
+└── LICENSE
 ```
-
----
-
-# 📊 Key KPIs
-
-| KPI | Value |
-|------|------:|
-| Employees | 1,470 |
-| Attrition | 237 |
-| Attrition Rate | 16.12% |
-| Average Age | 36.9 Years |
-| Average Monthly Income | $6,503 |
-| Average Tenure | 7 Years |
 
 ---
 
 # 🚀 Future Improvements
 
-- Interactive Power BI Dashboard
-- Tableau Dashboard
-- Machine Learning Attrition Prediction
-- SHAP Feature Importance
-- Employee Risk Scoring
+- Predict employee attrition using Machine Learning
+- Build an interactive dashboard with Power BI
+- Develop predictive HR models using XGBoost
+- Perform feature importance analysis using SHAP values
+- Deploy the dashboard as a web application
 
 ---
 
-# 👩 Author
+## 👩 Author
 
 **Tiara Azahra Wika Putri**
 
@@ -233,3 +274,6 @@ Aspiring Data Analyst
 
 GitHub:
 https://github.com/azahratawp-ctrl
+
+LinkedIn:
+(Add your LinkedIn URL)
