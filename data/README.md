@@ -4,14 +4,27 @@ This folder contains the dataset used in this project.
 
 ## Dataset Information
 
-- Dataset: IBM HR Analytics Employee Attrition & Performance
-- Source: IBM Sample HR Analytics Dataset
-- File: `data_IBM.csv`
+**Dataset Name**
+IBM HR Analytics Employee Attrition & Performance
 
-The dataset contains information about employee demographics, job roles, compensation, work environment, and employee attrition.
+**File**
+`data_IBM.csv`
 
-Total observations: **1,470 employees**
+**Description**
 
-Target variable:
+This dataset contains employee demographic information, job-related factors, compensation, work environment, and employee attrition status.
 
-- Attrition (Yes / No)
+## Dataset Summary
+
+- Total Records: **1,470**
+- Total Features: **35**
+- Missing Values: **0**
+- Duplicate Records: **0**
+
+## Target Variable
+
+- Attrition
+  - Yes
+  - No
+
+This dataset is used for Exploratory Data Analysis (EDA), feature engineering, business insights, and dashboard development.
