@@ -1,5 +1,17 @@
 # 👨‍💼 HR Analytics Dashboard
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+
+![NumPy](https://img.shields.io/badge/NumPy-Numerical-blue?logo=numpy)
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+
+![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?logo=googlecolab)
+
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)
+
 ![Dashboard](images/HR_Analytics_Dashboard.png)
 
 ---
